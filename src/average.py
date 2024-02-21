@@ -2,7 +2,8 @@ from typing import List
 
 
 def find_average(numbers: List[int]) -> float:
-    raise NotImplementedError
+    result = 0
+    for number in numbers:
+        result += number
 
-
-#
+    return result / len(numbers)
